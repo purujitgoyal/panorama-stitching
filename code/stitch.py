@@ -31,4 +31,5 @@ cv2.imshow("Image A", imageA)
 cv2.imshow("Image B", imageB)
 cv2.imshow("Keypoint Matches", vis)
 cv2.imshow("Result", result)
-cv2.waitKey(0)
+if cv2.waitKey(0) == 27:
+	cv2.destroyAllWindows()
